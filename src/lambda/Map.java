@@ -27,7 +27,7 @@ public class Map {
         System.out.println(total);
 
         //Java8写法
-        //list.stream().map((c)->c+.12*c).forEach(System.out::println);
+        //list.stream().map();将对象转换成其他的对象
         double bill = list.stream().map((c)->c+.12*c).reduce((b,c)->b+c).get();
         System.out.println(bill);
 
