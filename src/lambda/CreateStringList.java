@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
  **/
 
 public class CreateStringList {
+
     public static void main(String[] args) {
         List<String> strList = Arrays.asList("abc","bcd","defg","as");
 

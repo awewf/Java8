@@ -1,4 +1,4 @@
-package comparator;
+package finterface.comparator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2019/8/26 14:56
  * @Version 1.0
  **/
-
+//Comparator比较器从jdk2就有，从jdk8开始该接口变为函数式接口,并且对其进行了增强（增加了一些默认方法和静态方法）
 public class ComparatorDemo {
 
     //对整数列表排序

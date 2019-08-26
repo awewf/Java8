@@ -77,7 +77,7 @@ public class Transaction {
         // JDK 8 如果发现type为grocery的所有交易, 然后返回以交易值降序排序的交易ID集合
         List<Integer> transactionsIds = transactions.stream()
                 .filter(t-> t.getType()==Type.GROCERY)//对流中数据进行过滤
-                //.sorted(comparator.comparing(Transaction::getValue))//comparing默认升序排序
+                //.sorted(finterface.comparator.comparing(Transaction::getValue))//comparing默认升序排序
                 .sorted(Comparator.comparing(Transaction::getValue).reversed())//先升序排，然后将数据倒置
                 .map(Transaction::getId)       //用于需要对流中的值进行某中形式的转换
                 .collect(Collectors.toList());//将流中的所有元素收集到List中
