@@ -1,5 +1,7 @@
 package Optional;
 
+import java.util.Optional;
+
 /**
  * @ClassName User
  * @Description TODO
@@ -11,10 +13,19 @@ package Optional;
 public class User {
     private String userName;
     private String password;
+    private String position;
 
     public User(String userName,String password){
         this.password = password;
         this.userName = userName;
+    }
+
+    public Optional<String> getPosition(){
+        return Optional.ofNullable(position);
+    }
+
+    public void setPosition(String position){
+        this.position = position;
     }
 
     public String getUserName() {
